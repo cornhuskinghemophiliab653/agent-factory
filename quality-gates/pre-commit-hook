@@ -1,0 +1,68 @@
+#!/bin/bash
+# Pre-commit hook: scan staged files for banned patterns.
+# Catches hardcoded secrets, debug leftovers, and placeholder text BEFORE they get committed.
+#
+# Install:
+#   ln -sf $(pwd)/quality-gates/pre-commit-hook .git/hooks/pre-commit
+
+# ── Banned patterns (regex | description | file extensions) ──
+declare -a CHECKS=(
+    'breakpoint\(\)|Python breakpoint() left in code|.py'
+    'debugger;|JS debugger statement|.js .html'
+    'PLACEHOLDER|placeholder text|.html'
+    'sk-[a-zA-Z0-9]{20,}|possible hardcoded API key|.py .js .html .yml .yaml .sh'
+    'ghp_[a-zA-Z0-9]{36}|hardcoded GitHub PAT|.py .js .html .yml .yaml .sh .json'
+)
+
+STAGED=$(git diff --cached --name-only --diff-filter=ACM 2>/dev/null)
+if [ -z "$STAGED" ]; then
+    exit 0
+fi
+
+FAIL=0
+
+for CHECK in "${CHECKS[@]}"; do
+    IFS='|' read -r PATTERN DESC EXTENSIONS <<< "$CHECK"
+
+    for FILE in $STAGED; do
+        # Check file extension
+        EXT=".${FILE##*.}"
+        if [ -n "$EXTENSIONS" ]; then
+            MATCH=0
+            for WANT_EXT in $EXTENSIONS; do
+                if [ "$EXT" = "$WANT_EXT" ]; then
+                    MATCH=1
+                    break
+                fi
+            done
+            [ "$MATCH" -eq 0 ] && continue
+        fi
+
+        # Skip the hook files themselves
+        case "$FILE" in
+            hooks/pre-commit|hooks/pre-push|banned_patterns.py) continue ;;
+        esac
+
+        # Check staged content (not working tree)
+        if git show ":$FILE" 2>/dev/null | grep -qEi "$PATTERN"; then
+            LINE=$(git show ":$FILE" 2>/dev/null | grep -nEi "$PATTERN" | head -1)
+            if echo "$LINE" | grep -qiE '^\s*#.*removed|^\s*#.*no longer'; then
+                continue
+            fi
+            if echo "$LINE" | grep -qiE 'placeholder="|[-.]placeholder|placeholders|::placeholder'; then
+                continue
+            fi
+            echo "BLOCKED: $FILE — $DESC"
+            echo "  $LINE"
+            FAIL=1
+        fi
+    done
+done
+
+if [ "$FAIL" -eq 1 ]; then
+    echo ""
+    echo "Pre-commit check failed. Fix the issues above or bypass with: git commit --no-verify"
+    exit 1
+fi
+
+exit 0

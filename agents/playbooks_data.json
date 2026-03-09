@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "generated": "2026-03-08",
+    "total": 20
+  },
+  "playbooks": [
+    {
+      "id": "healthcare",
+      "title": "AI in Healthcare & Medical",
+      "icon": "🏥",
+      "summary": "AI is transforming healthcare from diagnostics to drug discovery. Hospitals and clinics use AI to reduce diagnostic errors, personalize treatment plans, and automate administrative burden that burns out clinicians.",
+      "use_cases": [
+        {"title": "Clinical Decision Support", "description": "AI analyzes patient history, lab results, and imaging to suggest diagnoses and flag anomalies doctors might miss. Reduces diagnostic errors by cross-referencing millions of case studies in seconds."},
+        {"title": "Medical Imaging Analysis", "description": "Deep learning models detect tumors, fractures, and pathologies in X-rays, MRIs, and CT scans with radiologist-level accuracy, enabling faster triage and second opinions."},
+        {"title": "Administrative Automation", "description": "AI handles appointment scheduling, insurance pre-authorization, medical coding (ICD-10/CPT), and clinical documentation, freeing clinicians to focus on patient care."},
+        {"title": "Drug Discovery & Development", "description": "AI screens molecular compounds, predicts drug interactions, and identifies promising candidates for clinical trials, reducing the typical 10-year development cycle."},
+        {"title": "Predictive Patient Monitoring", "description": "Wearable data combined with AI models predict patient deterioration, readmission risk, and chronic disease progression, enabling proactive intervention."}
+      ],
+      "key_takeaways": [
+        "Start with administrative AI before clinical AI — lower risk, faster ROI",
+        "HIPAA compliance is non-negotiable — use on-premise or BAA-covered AI services",
+        "AI augments clinicians, it doesn't replace them — position it as a tool, not a threat",
+        "Training data bias can perpetuate health disparities — audit models across demographics",
+        "Interoperability (HL7 FHIR) is the biggest technical hurdle — plan for integration early"
+      ],
+      "recommended_agents": ["data-analyst", "compliance-officer", "process-engineer", "product-manager"]
+    },
+    {
+      "id": "financial-services",
+      "title": "AI in Financial Services & Banking",
+      "icon": "🏦",
+      "summary": "Financial institutions use AI for everything from fraud detection to algorithmic trading. The combination of massive datasets, clear success metrics, and regulatory pressure makes finance one of the most mature AI adoption sectors.",
+      "use_cases": [
+        {"title": "Fraud Detection & Prevention", "description": "Real-time transaction monitoring using ML models that detect anomalous spending patterns, synthetic identity fraud, and account takeover attempts across millions of transactions per second."},
+        {"title": "Credit Risk Assessment", "description": "AI evaluates creditworthiness using alternative data sources beyond traditional credit scores — employment patterns, transaction history, and behavioral signals — enabling more inclusive lending."},
+        {"title": "Algorithmic Trading", "description": "ML models analyze market data, news sentiment, and economic indicators to execute trades at speeds and volumes impossible for human traders, capturing micro-arbitrage opportunities."},
+        {"title": "Regulatory Compliance (RegTech)", "description": "AI automates AML/KYC screening, monitors transactions for suspicious activity, generates regulatory reports, and keeps pace with evolving compliance requirements across jurisdictions."},
+        {"title": "Personalized Financial Advisory", "description": "Robo-advisors use AI to build personalized portfolios, rebalance investments, and provide financial planning recommendations based on individual goals and risk tolerance."}
+      ],
+      "key_takeaways": [
+        "Explainability is mandatory — regulators require you to explain why a loan was denied",
+        "Start with fraud detection — it has the clearest ROI and least regulatory friction",
+        "Model drift is a constant threat — retrain on fresh data quarterly at minimum",
+        "Synthetic data can solve the privacy problem for model training",
+        "The biggest competitive advantage is speed of deployment, not model sophistication"
+      ],
+      "recommended_agents": ["financial-analyst", "compliance-officer", "data-engineer", "security-engineer"]
+    },
+    {
+      "id": "retail",
+      "title": "AI in Retail & E-Commerce",
+      "icon": "🛒",
+      "summary": "Retail AI drives personalization at scale — from product recommendations to dynamic pricing. The retailers winning today use AI to understand individual customer behavior and optimize every touchpoint from discovery to delivery.",
+      "use_cases": [
+        {"title": "Product Recommendations", "description": "Collaborative and content-based filtering models serve personalized product suggestions based on browsing history, purchase patterns, and similar customer behavior — driving 35%+ of e-commerce revenue."},
+        {"title": "Dynamic Pricing Optimization", "description": "AI adjusts prices in real-time based on demand, competitor pricing, inventory levels, and customer willingness-to-pay, maximizing margins while staying competitive."},
+        {"title": "Inventory & Demand Forecasting", "description": "ML models predict demand at the SKU level by store location, accounting for seasonality, promotions, weather, and local events to reduce stockouts and overstock."},
+        {"title": "Visual Search & Discovery", "description": "Customers photograph items they like and AI finds similar products in your catalog. Computer vision enables 'shop the look' features and virtual try-on experiences."},
+        {"title": "Customer Service Automation", "description": "AI chatbots handle order tracking, returns, product questions, and complaint resolution, with seamless handoff to human agents for complex issues."}
+      ],
+      "key_takeaways": [
+        "Recommendation engines have the highest ROI per engineering dollar in retail",
+        "Personalization without creepiness — be transparent about data usage",
+        "Real-time inventory visibility is a prerequisite for AI-powered fulfillment",
+        "A/B test everything — even the best AI model needs validation against business metrics",
+        "The best retailers use AI to enhance the human shopping experience, not replace it"
+      ],
+      "recommended_agents": ["data-analyst", "growth-hacker", "content-strategist", "customer-success-manager"]
+    },
+    {
+      "id": "manufacturing",
+      "title": "AI in Manufacturing",
+      "icon": "🏭",
+      "summary": "Smart manufacturing uses AI to predict equipment failures before they happen, optimize production lines in real-time, and maintain quality standards that human inspection alone can't match at scale.",
+      "use_cases": [
+        {"title": "Predictive Maintenance", "description": "Sensor data from equipment feeds ML models that predict failures 2-4 weeks in advance, reducing unplanned downtime by 30-50% and extending asset life."},
+        {"title": "Quality Control & Defect Detection", "description": "Computer vision systems inspect products at line speed, detecting defects invisible to the human eye — surface cracks, dimensional variance, color inconsistency — with 99.5%+ accuracy."},
+        {"title": "Production Optimization", "description": "AI optimizes production schedules, machine parameters, and resource allocation across the factory floor, increasing throughput while reducing energy consumption and waste."},
+        {"title": "Supply Chain Resilience", "description": "ML models analyze supplier risk, logistics disruptions, and demand signals to recommend alternative sourcing strategies and buffer inventory levels before problems materialize."},
+        {"title": "Generative Design", "description": "AI generates thousands of design variations optimized for specific constraints — weight, strength, material cost, manufacturability — producing designs no human engineer would conceive."}
+      ],
+      "key_takeaways": [
+        "Start with predictive maintenance — it has the fastest payback period (3-6 months typical)",
+        "Edge computing is essential — factory AI can't depend on cloud latency",
+        "Legacy equipment needs IoT retrofitting before AI can work — budget for sensors",
+        "Digital twins accelerate AI deployment by providing safe simulation environments",
+        "The biggest barrier isn't technology — it's getting operators to trust AI recommendations"
+      ],
+      "recommended_agents": ["data-engineer", "process-engineer", "quality-manager", "supply-chain-analyst"]
+    },
+    {
+      "id": "real-estate",
+      "title": "AI in Real Estate",
+      "icon": "🏠",
+      "summary": "Real estate AI automates valuations, generates listings, qualifies leads, and predicts market trends. From residential brokerages to commercial property management, AI is eliminating manual work and enabling data-driven decisions.",
+      "use_cases": [
+        {"title": "Automated Property Valuation", "description": "AI models analyze comparable sales, neighborhood trends, property features, and market conditions to generate instant valuations (AVMs) that rival traditional appraisals in accuracy."},
+        {"title": "Lead Qualification & Nurturing", "description": "AI scores and prioritizes leads based on browsing behavior, search criteria, and engagement signals, then automates personalized follow-up sequences to keep prospects warm."},
+        {"title": "Listing Content Generation", "description": "AI generates compelling property descriptions, virtual staging, floor plan analysis, and neighborhood guides — turning raw listing data into marketing-ready content in minutes."},
+        {"title": "Market Trend Prediction", "description": "ML models analyze economic indicators, demographic shifts, development permits, and transaction patterns to forecast neighborhood-level price movements 6-12 months ahead."},
+        {"title": "Property Management Automation", "description": "AI handles tenant screening, maintenance request triage, lease renewal optimization, and rent pricing — reducing vacancy rates and operational overhead for portfolio managers."}
+      ],
+      "key_takeaways": [
+        "Automated valuations are a starting point, not a final answer — always pair with human expertise",
+        "MLS data quality varies wildly — garbage in, garbage out applies here more than anywhere",
+        "AI-generated listings need human review for accuracy and fair housing compliance",
+        "The biggest opportunity is in commercial real estate, where data is less commoditized",
+        "Virtual staging and tour generation have the fastest adoption curve and lowest risk"
+      ],
+      "recommended_agents": ["copywriter", "data-analyst", "sales-development-rep", "content-strategist"]
+    },
+    {
+      "id": "education",
+      "title": "AI in Education & EdTech",
+      "icon": "🎓",
+      "summary": "AI in education personalizes learning at scale — adapting pace, content, and assessment to each student. From K-12 to corporate training, AI tutors, automates grading, and identifies at-risk students before they fall behind.",
+      "use_cases": [
+        {"title": "Adaptive Learning Platforms", "description": "AI adjusts lesson difficulty, content format, and pacing based on individual student performance, learning style, and knowledge gaps — delivering personalized education at the scale of a classroom."},
+        {"title": "Automated Assessment & Feedback", "description": "AI grades essays, evaluates code submissions, checks mathematical proofs, and provides detailed feedback — reducing teacher grading burden by 60-80% while maintaining consistency."},
+        {"title": "Early Warning Systems", "description": "ML models analyze attendance, engagement, grades, and behavioral signals to identify at-risk students weeks before they would traditionally be flagged, enabling proactive intervention."},
+        {"title": "Content Generation & Curriculum Design", "description": "AI generates practice problems, quiz variations, lesson plans, and study materials aligned to learning objectives and standards — personalizing curriculum at scale."},
+        {"title": "Administrative Efficiency", "description": "AI automates enrollment processing, scheduling optimization, resource allocation, and compliance reporting — freeing administrators to focus on student outcomes."}
+      ],
+      "key_takeaways": [
+        "AI tutoring works best as a supplement to human teaching, not a replacement",
+        "Student data privacy (FERPA/COPPA) requires careful AI deployment planning",
+        "The biggest gains come from adaptive practice and instant feedback loops",
+        "Teacher buy-in is essential — involve educators in AI tool selection and rollout",
+        "Assessment AI must be audited for bias across demographic groups"
+      ],
+      "recommended_agents": ["content-designer", "data-analyst", "product-manager", "learning-development"]
+    },
+    {
+      "id": "construction",
+      "title": "AI in Construction & Engineering",
+      "icon": "🏗️",
+      "summary": "Construction AI tackles the industry's chronic problems — cost overruns, schedule delays, and safety incidents. From project planning to on-site monitoring, AI brings data-driven precision to one of the last industries to digitize.",
+      "use_cases": [
+        {"title": "Project Cost & Schedule Estimation", "description": "AI analyzes historical project data, material costs, labor rates, and site conditions to generate more accurate estimates and identify schedule risks before ground is broken."},
+        {"title": "Safety Monitoring & Compliance", "description": "Computer vision on job sites detects PPE violations, unsafe conditions, and near-miss incidents in real-time, reducing workplace injuries and OSHA citations."},
+        {"title": "Building Information Modeling (BIM) Enhancement", "description": "AI automates clash detection, generates construction sequences, optimizes material quantities, and identifies design conflicts across disciplines before they become expensive field changes."},
+        {"title": "Equipment & Resource Optimization", "description": "ML models optimize equipment deployment, crew scheduling, and material delivery timing across multiple job sites to minimize idle time and maximize utilization."},
+        {"title": "Document Processing & RFI Management", "description": "AI processes submittals, RFIs, change orders, and inspection reports — extracting key data, routing approvals, and maintaining audit trails automatically."}
+      ],
+      "key_takeaways": [
+        "Start with document processing — it has the lowest barrier to entry and immediate ROI",
+        "Safety AI needs edge computing — construction sites rarely have reliable internet",
+        "Historical project data is the moat — start collecting structured data now",
+        "Subcontractor adoption is the biggest bottleneck — make AI tools simple and mobile-first",
+        "AI estimating improves with every project — the compound learning effect is the real value"
+      ],
+      "recommended_agents": ["project-manager", "process-engineer", "quality-manager", "business-analyst"]
+    },
+    {
+      "id": "automotive",
+      "title": "AI in Automotive",
+      "icon": "🚗",
+      "summary": "Automotive AI spans from autonomous driving to predictive maintenance to smart manufacturing. The industry's massive data generation — sensors, telematics, production lines — makes it one of the richest AI deployment environments.",
+      "use_cases": [
+        {"title": "Autonomous Driving Systems", "description": "Deep learning processes camera, lidar, and radar data in real-time for object detection, path planning, and decision-making — from Level 2 driver assist to Level 4+ full autonomy."},
+        {"title": "Predictive Vehicle Maintenance", "description": "Connected vehicle telematics feed ML models that predict component failures, optimize service schedules, and alert drivers before breakdowns occur — reducing roadside incidents."},
+        {"title": "Smart Manufacturing & Quality", "description": "AI optimizes assembly line parameters, detects paint and body defects via computer vision, and coordinates just-in-time delivery across hundreds of suppliers."},
+        {"title": "In-Vehicle AI Assistants", "description": "Natural language interfaces understand driver intent, manage navigation, climate, entertainment, and vehicle settings conversationally — learning preferences over time."},
+        {"title": "Sales & Dealer Operations", "description": "AI optimizes dealer inventory allocation, personalizes marketing to in-market shoppers, and predicts which leads are most likely to convert within specific timeframes."}
+      ],
+      "key_takeaways": [
+        "Autonomous driving is a 10-year horizon — predictive maintenance and quality AI deliver ROI now",
+        "The data advantage compounds — OEMs with larger fleets train better models",
+        "Functional safety (ISO 26262) adds significant overhead to automotive AI deployment",
+        "Over-the-air updates enable continuous AI improvement without dealership visits",
+        "The real disruption is software-defined vehicles, not just autonomy"
+      ],
+      "recommended_agents": ["data-engineer", "ml-engineer", "product-manager", "quality-manager"]
+    },
+    {
+      "id": "insurance",
+      "title": "AI in Insurance",
+      "icon": "🛡️",
+      "summary": "Insurance AI automates underwriting, accelerates claims processing, and detects fraud. The industry's foundation on risk assessment and data analysis makes it a natural fit for ML models that can process more variables faster than any actuary.",
+      "use_cases": [
+        {"title": "Automated Underwriting", "description": "AI evaluates risk using hundreds of data points — medical records, driving history, property data, IoT sensors — to price policies more accurately and process applications in minutes instead of weeks."},
+        {"title": "Claims Processing & Triage", "description": "AI reads claim submissions, extracts key information, assesses damage from photos, and routes claims by complexity — handling simple claims end-to-end and flagging complex ones for adjusters."},
+        {"title": "Fraud Detection", "description": "ML models identify suspicious patterns across claims — staged accidents, inflated damages, duplicate submissions — catching fraud that costs the industry $80B+ annually."},
+        {"title": "Customer Experience & Chatbots", "description": "AI handles policy questions, coverage inquiries, and claims status updates 24/7, with seamless escalation to human agents for complex situations."},
+        {"title": "Risk Prevention & IoT", "description": "Connected devices (smart home sensors, telematics, wearables) feed AI models that proactively identify and mitigate risks — offering premium discounts for safer behavior."}
+      ],
+      "key_takeaways": [
+        "Claims automation has the clearest ROI — start with simple, high-volume claim types",
+        "Explainable AI is essential — policyholders and regulators need to understand decisions",
+        "Bias in underwriting models can lead to regulatory action and reputational damage",
+        "The shift from 'pay and chase' to 'predict and prevent' is the industry's future",
+        "Incumbents with historical data have a massive advantage over insurtechs in model training"
+      ],
+      "recommended_agents": ["data-analyst", "compliance-officer", "customer-success-manager", "financial-analyst"]
+    },
+    {
+      "id": "logistics",
+      "title": "AI in Logistics & Supply Chain",
+      "icon": "🚚",
+      "summary": "Logistics AI optimizes the movement of goods from origin to destination. Route optimization, demand forecasting, and warehouse automation reduce costs and delivery times while improving reliability across complex global networks.",
+      "use_cases": [
+        {"title": "Route Optimization", "description": "AI solves multi-constraint routing problems in real-time — balancing delivery windows, vehicle capacity, driver hours, traffic, and fuel costs across fleets of thousands of vehicles."},
+        {"title": "Demand Forecasting", "description": "ML models predict order volumes at the SKU/location level, accounting for seasonality, promotions, economic indicators, and external events — reducing safety stock by 20-30%."},
+        {"title": "Warehouse Automation", "description": "AI orchestrates robotic picking, slotting optimization, and labor scheduling — adapting in real-time to order surges and inventory changes."},
+        {"title": "Shipment Visibility & ETA Prediction", "description": "AI processes carrier data, weather, port congestion, and customs delays to provide accurate delivery predictions and proactive exception management."},
+        {"title": "Supplier Risk Management", "description": "ML models monitor supplier health, geopolitical risk, and market disruptions to recommend diversification strategies and trigger contingency plans before supply chain breaks."}
+      ],
+      "key_takeaways": [
+        "Route optimization delivers measurable fuel savings within weeks of deployment",
+        "Data quality across the supply chain is the #1 bottleneck — invest in data standards",
+        "Real-time visibility requires IoT investment — GPS, RFID, temperature sensors",
+        "The compound effect of better forecasting cascades through the entire supply chain",
+        "Last-mile delivery is where AI has the highest impact per dollar spent"
+      ],
+      "recommended_agents": ["supply-chain-analyst", "data-engineer", "process-engineer", "business-analyst"]
+    },
+    {
+      "id": "agriculture",
+      "title": "AI in Agriculture & Farming",
+      "icon": "🌾",
+      "summary": "Precision agriculture uses AI to optimize every aspect of farming — from soil analysis to harvest timing. Drones, sensors, and satellite imagery feed models that help farmers produce more food with fewer resources.",
+      "use_cases": [
+        {"title": "Crop Health Monitoring", "description": "Drone and satellite imagery analyzed by computer vision detects disease, pest damage, nutrient deficiency, and water stress at the individual plant level before visible symptoms appear."},
+        {"title": "Precision Irrigation & Fertilization", "description": "AI models combine soil sensors, weather forecasts, and crop growth models to prescribe exact water and nutrient amounts per field zone — reducing input costs by 20-40%."},
+        {"title": "Yield Prediction & Harvest Optimization", "description": "ML models forecast yield at the field level weeks before harvest, enabling better logistics planning, forward contract decisions, and labor scheduling."},
+        {"title": "Livestock Monitoring", "description": "Wearable sensors and camera systems track animal health, behavior, and feeding patterns — detecting illness early, optimizing feed ratios, and predicting breeding readiness."},
+        {"title": "Market Price Forecasting", "description": "AI analyzes global commodity markets, weather patterns, trade policies, and supply chain data to help farmers make better planting and selling decisions."}
+      ],
+      "key_takeaways": [
+        "Start with crop monitoring — it requires minimal hardware and delivers immediate insights",
+        "Rural connectivity is the biggest technical barrier — plan for offline-capable AI",
+        "The economics work best for high-value crops (specialty produce, wine grapes, nuts)",
+        "Farmer trust is earned through transparency — show the data behind every recommendation",
+        "Government grants and subsidies often cover 50%+ of precision agriculture technology costs"
+      ],
+      "recommended_agents": ["data-analyst", "supply-chain-analyst", "process-engineer", "financial-analyst"]
+    },
+    {
+      "id": "hospitality",
+      "title": "AI in Hospitality & Travel",
+      "icon": "✈️",
+      "summary": "Hospitality AI personalizes the guest experience while optimizing revenue. From dynamic room pricing to AI concierges, the industry uses AI to deliver luxury-level personalization at every price point.",
+      "use_cases": [
+        {"title": "Revenue Management & Dynamic Pricing", "description": "AI adjusts room rates, flight prices, and package deals in real-time based on demand, competitor pricing, events, weather, and booking patterns — maximizing RevPAR."},
+        {"title": "Personalized Guest Experience", "description": "AI builds guest profiles from past stays, preferences, and feedback to personalize everything — room temperature, pillow type, restaurant recommendations, activity suggestions."},
+        {"title": "AI Concierge & Chatbots", "description": "Multilingual AI assistants handle reservations, answer property questions, process requests, and provide local recommendations 24/7 — in 50+ languages."},
+        {"title": "Operational Efficiency", "description": "AI optimizes housekeeping schedules, staffing levels, energy management, and food & beverage inventory based on occupancy predictions and historical patterns."},
+        {"title": "Review Analysis & Reputation Management", "description": "NLP analyzes thousands of reviews across platforms to identify trending complaints, operational issues, and competitive advantages — enabling data-driven improvements."}
+      ],
+      "key_takeaways": [
+        "Revenue management AI pays for itself within the first quarter — it's the entry point",
+        "Guests expect AI to enhance, not replace, human hospitality — the personal touch still matters",
+        "Multilingual AI is table stakes for international properties",
+        "Review analysis reveals operational issues that internal audits miss",
+        "Energy optimization AI reduces utility costs 15-25% with no guest impact"
+      ],
+      "recommended_agents": ["customer-success-manager", "data-analyst", "content-strategist", "help-desk-agent"]
+    },
+    {
+      "id": "media",
+      "title": "AI in Media & Entertainment",
+      "icon": "🎬",
+      "summary": "Media AI powers content recommendation, creation, and monetization. From Netflix's algorithm to AI-assisted scriptwriting, the industry is being reshaped by models that understand audience preferences and generate content at scale.",
+      "use_cases": [
+        {"title": "Content Recommendation Engines", "description": "AI personalizes what users see across streaming, news, social, and music platforms — balancing engagement, diversity, and business objectives (subscriptions, ad revenue, retention)."},
+        {"title": "Content Creation & Assistance", "description": "AI generates article drafts, video scripts, social media posts, thumbnails, and headline variations — accelerating production workflows while maintaining brand voice."},
+        {"title": "Audience Analytics & Segmentation", "description": "ML models cluster audiences by behavior, preferences, and lifetime value — enabling targeted content development and precision advertising."},
+        {"title": "Content Moderation", "description": "AI scans user-generated content for policy violations — hate speech, misinformation, copyright infringement, explicit material — at speeds that make human-only moderation impossible."},
+        {"title": "Ad Optimization & Monetization", "description": "AI places ads based on content context, viewer behavior, and conversion probability — maximizing revenue per impression while maintaining viewer experience."}
+      ],
+      "key_takeaways": [
+        "Recommendation engines are the product — invest accordingly",
+        "AI-generated content needs human editorial oversight for accuracy and quality",
+        "Content moderation AI must be continuously trained on evolving threats and cultural context",
+        "The best content AI enhances human creativity, not replaces it",
+        "First-party data strategies are essential as third-party cookies disappear"
+      ],
+      "recommended_agents": ["content-strategist", "data-analyst", "growth-hacker", "copywriter"]
+    },
+    {
+      "id": "telecommunications",
+      "title": "AI in Telecommunications",
+      "icon": "📡",
+      "summary": "Telecom AI optimizes networks, predicts churn, and automates customer service. With billions of network events per day, telecoms generate more data than almost any industry — making AI essential for operational efficiency.",
+      "use_cases": [
+        {"title": "Network Optimization & Self-Healing", "description": "AI monitors network performance, predicts congestion, reroutes traffic, and automatically resolves issues — reducing outages and improving quality of service across millions of connections."},
+        {"title": "Customer Churn Prediction", "description": "ML models identify customers likely to switch providers based on usage patterns, complaint history, contract timing, and competitive offers — enabling targeted retention campaigns."},
+        {"title": "Customer Service Automation", "description": "AI handles billing inquiries, plan changes, technical troubleshooting, and service requests — resolving 60-70% of issues without human intervention."},
+        {"title": "Fraud Prevention", "description": "Real-time AI detects SIM swap fraud, subscription fraud, and revenue leakage patterns across the network, saving hundreds of millions annually."},
+        {"title": "5G Network Planning", "description": "AI optimizes cell tower placement, beam forming, and spectrum allocation for 5G deployment — maximizing coverage while minimizing infrastructure investment."}
+      ],
+      "key_takeaways": [
+        "Network optimization AI is the highest-value use case — even 1% improvement saves millions",
+        "Churn prediction models need to be actionable — pair predictions with retention offers",
+        "Telecoms have the data advantage but legacy systems make integration expensive",
+        "AI-powered customer service must handle complex billing scenarios accurately",
+        "The 5G rollout is a once-in-a-generation opportunity for AI-native network architecture"
+      ],
+      "recommended_agents": ["data-engineer", "customer-success-manager", "devops-engineer", "business-analyst"]
+    },
+    {
+      "id": "energy",
+      "title": "AI in Energy & Utilities",
+      "icon": "⚡",
+      "summary": "Energy AI balances supply and demand across power grids, optimizes renewable generation, and predicts equipment failures. The energy transition to renewables is fundamentally an AI challenge — managing intermittent generation at grid scale.",
+      "use_cases": [
+        {"title": "Grid Optimization & Load Balancing", "description": "AI forecasts energy demand at 15-minute intervals and optimizes generation dispatch, storage cycling, and demand response programs to maintain grid stability."},
+        {"title": "Renewable Energy Forecasting", "description": "ML models predict solar and wind generation based on weather data, satellite imagery, and historical patterns — enabling better grid planning and reducing curtailment."},
+        {"title": "Predictive Asset Maintenance", "description": "AI analyzes sensor data from turbines, transformers, and distribution equipment to predict failures and optimize maintenance schedules — reducing outages by 25-40%."},
+        {"title": "Energy Trading & Price Forecasting", "description": "AI models predict wholesale energy prices, optimize bidding strategies, and identify arbitrage opportunities across real-time and day-ahead markets."},
+        {"title": "Smart Meter Analytics", "description": "AI processes smart meter data to detect theft, identify inefficient consumption patterns, and enable dynamic tariff programs that incentivize off-peak usage."}
+      ],
+      "key_takeaways": [
+        "Grid optimization is the gateway use case — it justifies the data infrastructure investment",
+        "Renewable forecasting accuracy directly impacts grid reliability and economics",
+        "Utility AI must meet strict reliability standards — five-nines availability is expected",
+        "The business model is shifting from selling energy to selling optimization",
+        "Regulatory frameworks are still catching up to AI-managed grids — engage early with regulators"
+      ],
+      "recommended_agents": ["data-engineer", "financial-analyst", "process-engineer", "compliance-officer"]
+    },
+    {
+      "id": "government",
+      "title": "AI in Government & Public Sector",
+      "icon": "🏛️",
+      "summary": "Government AI improves citizen services, reduces fraud, and enables evidence-based policy. From processing permit applications to optimizing emergency response, AI helps governments do more with constrained budgets.",
+      "use_cases": [
+        {"title": "Citizen Service Automation", "description": "AI chatbots and form processing handle permit applications, benefits enrollment, tax questions, and service requests — reducing wait times from weeks to minutes."},
+        {"title": "Fraud Detection & Waste Reduction", "description": "ML models identify fraudulent benefit claims, procurement irregularities, and tax evasion patterns — recovering billions in government funds annually."},
+        {"title": "Emergency Response Optimization", "description": "AI optimizes ambulance routing, disaster resource allocation, and evacuation planning based on real-time conditions, population density, and historical incident data."},
+        {"title": "Policy Impact Simulation", "description": "AI models simulate the effects of policy changes — tax adjustments, zoning changes, infrastructure investments — before implementation, enabling evidence-based governance."},
+        {"title": "Document Processing & Records Management", "description": "AI digitizes, classifies, and retrieves government records — making decades of paper archives searchable and enabling automated compliance checks."}
+      ],
+      "key_takeaways": [
+        "Start with document processing — every agency has a backlog and the ROI is immediate",
+        "Algorithmic fairness auditing is mandatory for government AI that affects citizens",
+        "Procurement cycles are the biggest bottleneck — plan for 12-18 month timelines",
+        "Open-source AI solutions reduce vendor lock-in and increase public trust",
+        "Citizen trust requires transparency — publish AI usage policies and audit results"
+      ],
+      "recommended_agents": ["process-engineer", "compliance-officer", "data-analyst", "change-manager"]
+    },
+    {
+      "id": "legal",
+      "title": "AI in Legal Services",
+      "icon": "⚖️",
+      "summary": "Legal AI automates document review, contract analysis, and legal research. The profession's document-heavy workflows and high hourly rates make it one of the highest-ROI environments for AI deployment.",
+      "use_cases": [
+        {"title": "Contract Review & Analysis", "description": "AI reads contracts, identifies non-standard clauses, flags risks, and suggests revisions — reducing review time from hours to minutes while catching issues junior associates might miss."},
+        {"title": "Legal Research & Case Analysis", "description": "AI searches case law, statutes, and regulatory databases to find relevant precedents and build arguments — performing in minutes what traditionally takes hours of associate time."},
+        {"title": "E-Discovery & Document Review", "description": "ML models classify, prioritize, and review millions of documents in litigation discovery — reducing costs by 60-80% compared to manual review while improving consistency."},
+        {"title": "Compliance Monitoring", "description": "AI continuously monitors regulatory changes, contract obligations, and compliance deadlines across jurisdictions — alerting legal teams before issues arise."},
+        {"title": "Legal Document Generation", "description": "AI drafts NDAs, employment agreements, incorporation documents, and standard contracts from templates — with firm-specific clause libraries and jurisdiction-aware formatting."}
+      ],
+      "key_takeaways": [
+        "E-discovery is the proven use case — TAR (Technology Assisted Review) is accepted by courts",
+        "AI augments lawyers, it doesn't replace legal judgment — position it as leverage, not substitution",
+        "Confidentiality is paramount — use on-premise or zero-data-retention AI services",
+        "The biggest resistance comes from partners who bill by the hour — align incentives",
+        "Small and mid-size firms benefit most — AI levels the playing field against large firms"
+      ],
+      "recommended_agents": ["contract-attorney", "compliance-officer", "data-analyst", "knowledge-base-manager"]
+    },
+    {
+      "id": "nonprofit",
+      "title": "AI in Nonprofit & Social Impact",
+      "icon": "💚",
+      "summary": "Nonprofits use AI to maximize impact with limited resources. From grant writing to donor analytics to program evaluation, AI helps organizations focus more time on their mission and less on administrative overhead.",
+      "use_cases": [
+        {"title": "Grant Writing & Fundraising", "description": "AI drafts grant proposals, personalizes donor communications, and identifies potential funders by matching organizational mission to foundation priorities and giving patterns."},
+        {"title": "Donor Analytics & Retention", "description": "ML models predict donor lapse risk, optimize ask amounts, and identify major gift prospects — increasing lifetime donor value and reducing acquisition costs."},
+        {"title": "Program Impact Measurement", "description": "AI analyzes program data to quantify impact, identify what's working, and generate reports that satisfy stakeholders and funders — turning anecdotal evidence into data-driven narratives."},
+        {"title": "Volunteer Management", "description": "AI matches volunteers to opportunities based on skills, availability, and location — optimizing scheduling and reducing no-show rates through smart reminders and engagement."},
+        {"title": "Content & Storytelling", "description": "AI helps create impact reports, social media content, email campaigns, and annual reports — amplifying the organization's story across channels with limited marketing staff."}
+      ],
+      "key_takeaways": [
+        "Grant writing AI has immediate ROI — even 10% more successful applications is transformative",
+        "Donor segmentation and personalization dramatically improve retention rates",
+        "Many AI tools offer nonprofit pricing (50-90% discounts) — always ask",
+        "Start with the biggest time sinks — usually reporting, communications, and data entry",
+        "Impact measurement AI helps justify budgets and attract institutional funding"
+      ],
+      "recommended_agents": ["copywriter", "data-analyst", "email-marketer", "content-strategist"]
+    },
+    {
+      "id": "food-restaurant",
+      "title": "AI in Food & Restaurant",
+      "icon": "🍽️",
+      "summary": "Restaurant and food service AI optimizes operations from kitchen to customer. Inventory waste reduction, dynamic menu pricing, and labor scheduling are the high-impact areas where AI delivers measurable savings in a thin-margin industry.",
+      "use_cases": [
+        {"title": "Inventory & Waste Reduction", "description": "AI predicts ingredient demand based on reservations, weather, events, and historical patterns — reducing food waste by 20-40% through precise ordering and prep quantities."},
+        {"title": "Dynamic Menu Optimization", "description": "AI analyzes sales data, food costs, and customer preferences to recommend menu changes, pricing adjustments, and seasonal rotations that maximize margin per cover."},
+        {"title": "Labor Scheduling", "description": "ML models forecast covers by hour and optimize staff scheduling — balancing service quality, labor costs, and compliance with break/overtime regulations."},
+        {"title": "Customer Ordering & Personalization", "description": "AI-powered ordering systems remember preferences, suggest pairings, handle dietary restrictions, and upsell based on individual customer history and current trends."},
+        {"title": "Kitchen Operations & Quality", "description": "AI monitors cook times, food temperatures, and plating consistency — ensuring every dish meets standards while optimizing kitchen workflow during peak hours."}
+      ],
+      "key_takeaways": [
+        "Food waste reduction is the easiest win — it directly hits the bottom line",
+        "Labor scheduling AI needs to integrate with POS and reservation systems to work",
+        "Multi-unit operators see the biggest gains — AI standardizes quality across locations",
+        "The tech-savvy diner expects AI-powered ordering, but the experience must feel human",
+        "Ghost kitchens and delivery-only brands are built entirely on AI-driven optimization"
+      ],
+      "recommended_agents": ["supply-chain-analyst", "data-analyst", "process-engineer", "customer-success-manager"]
+    },
+    {
+      "id": "professional-services",
+      "title": "AI in Professional Services & Consulting",
+      "icon": "💼",
+      "summary": "Consulting and professional services firms use AI to deliver more value faster. From automating research to generating deliverables, AI amplifies consultant productivity and enables firms to serve more clients without proportionally growing headcount.",
+      "use_cases": [
+        {"title": "Research & Analysis Automation", "description": "AI scans industry reports, financial filings, news, and databases to compile research briefs that would take analysts days — accelerating the insight-to-recommendation cycle."},
+        {"title": "Deliverable Generation", "description": "AI drafts slide decks, reports, proposals, and executive summaries from structured inputs — maintaining firm templates, branding, and quality standards."},
+        {"title": "Knowledge Management", "description": "AI makes firm knowledge searchable and reusable — finding past proposals, case studies, and expert profiles that match current client needs across decades of institutional memory."},
+        {"title": "Client Engagement Optimization", "description": "AI analyzes client health signals, project progress, and relationship data to predict renewals, identify upsell opportunities, and flag at-risk engagements."},
+        {"title": "Pricing & Resource Allocation", "description": "ML models optimize project pricing, team composition, and resource allocation across the portfolio — maximizing utilization while maintaining quality and preventing burnout."}
+      ],
+      "key_takeaways": [
+        "Knowledge management AI is the highest-leverage investment for established firms",
+        "AI-generated deliverables need senior review — but they cut production time by 60-70%",
+        "The competitive advantage shifts from information access to interpretation and judgment",
+        "Clients increasingly expect AI-enhanced delivery — it's a differentiator, not a luxury",
+        "Train consultants to use AI tools — the firms that upskill fastest win"
+      ],
+      "recommended_agents": ["strategy-consultant", "business-analyst", "knowledge-base-manager", "proposal-writer"]
+    }
+  ]
+}

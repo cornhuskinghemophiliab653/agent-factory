@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "updated": "2026-03-08",
+    "count": 49
+  },
+  "terms": [
+    {
+      "id": "agent",
+      "term": "Agent",
+      "aka": null,
+      "definition": "An AI system that can take actions autonomously \u2014 reading files, calling APIs, running code, making decisions \u2014 not just generating text. Agents do work; chatbots give answers.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "api",
+      "term": "API",
+      "aka": "Application Programming Interface",
+      "definition": "A structured way for software to talk to other software. When you send a prompt to Claude through code instead of a chat window, you're using an API.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "attention",
+      "term": "Attention",
+      "aka": null,
+      "definition": "The mechanism that lets AI focus on relevant parts of the input when generating output. It's why AI can connect \"the cat sat on the mat\" to a question about cats, even if the question comes 1,000 words later.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "chain-of-thought",
+      "term": "Chain of Thought",
+      "aka": null,
+      "definition": "A prompting technique where you ask AI to reason step by step instead of jumping to the answer. It improves accuracy on complex tasks by forcing the model to show its work.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "completion",
+      "term": "Completion",
+      "aka": null,
+      "definition": "The text that an AI model generates in response to a prompt. You send a prompt; you get back a completion.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "context-window",
+      "term": "Context Window",
+      "aka": null,
+      "definition": "The maximum amount of text an AI can \"see\" at once \u2014 both your input and its output combined. Think of it as the model's working memory. Bigger windows let you feed more information.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "diffusion-model",
+      "term": "Diffusion Model",
+      "aka": null,
+      "definition": "An AI that generates images by starting with random noise and gradually refining it into a picture. Used by DALL-E, Midjourney, and Stable Diffusion.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "embedding",
+      "term": "Embedding",
+      "aka": null,
+      "definition": "A way to convert text (or images) into a list of numbers that captures meaning. Similar concepts get similar numbers, which is how AI can understand that \"dog\" and \"puppy\" are related.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "fine-tuning",
+      "term": "Fine-Tuning",
+      "aka": null,
+      "definition": "Training an existing AI model on your own specific data to make it better at a particular task. Like teaching a general-purpose chef to specialize in Italian cuisine.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "guardrails",
+      "term": "Guardrails",
+      "aka": null,
+      "definition": "Rules and constraints you set to keep AI output safe, on-topic, and within boundaries. \"Do NOT modify existing tests\" is a guardrail. They prevent AI from going rogue on your codebase.",
+      "category": "security",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "hallucination",
+      "term": "Hallucination",
+      "aka": null,
+      "definition": "When AI generates information that sounds confident but is factually wrong. It doesn't \"know\" it's making things up \u2014 it's pattern-matching, not fact-checking. Always verify critical claims.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "inference",
+      "term": "Inference",
+      "aka": null,
+      "definition": "The process of running a trained AI model to generate output. When you send a prompt and get a response, that's inference. Training teaches the model; inference uses it.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "latency",
+      "term": "Latency",
+      "aka": null,
+      "definition": "The time between sending a prompt and receiving the first token of the response. Lower latency means faster responses. Affected by model size, server load, and network distance.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "llm",
+      "term": "LLM",
+      "aka": "Large Language Model",
+      "definition": "A massive AI model trained on enormous amounts of text data. Claude, GPT, and Gemini are all LLMs. \"Large\" refers to the billions of parameters (adjustable weights) that make them work.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "mcp",
+      "term": "MCP",
+      "aka": "Model Context Protocol",
+      "definition": "An open protocol that lets AI models connect to external tools and data sources in a standardized way. Like USB for AI \u2014 one protocol, many tools. Created by Anthropic.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "multimodal",
+      "term": "Multimodal",
+      "aka": null,
+      "definition": "An AI that can process multiple types of input \u2014 text, images, audio, video \u2014 not just words. A multimodal model can look at a photo and describe what's in it.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "parameters",
+      "term": "Parameters",
+      "aka": null,
+      "definition": "The adjustable numbers inside a neural network that the model learns during training. More parameters generally means more capability, but also more compute cost. Claude has billions of them.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "prompt",
+      "term": "Prompt",
+      "aka": null,
+      "definition": "The input you give to an AI model \u2014 the question, instruction, or context that tells it what to do. Better prompts get better outputs. This is the skill most people underinvest in.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "prompt-engineering",
+      "term": "Prompt Engineering",
+      "aka": null,
+      "definition": "The art and science of crafting prompts that get the best results from AI. Includes techniques like role prompting, chain-of-thought, few-shot examples, and structured output.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "prompt-injection",
+      "term": "Prompt Injection",
+      "aka": null,
+      "definition": "A security attack where malicious instructions are hidden in data that AI processes. Like SQL injection, but for AI prompts. Important to understand if you're building AI-powered tools.",
+      "category": "security",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "rag",
+      "term": "RAG",
+      "aka": "Retrieval-Augmented Generation",
+      "definition": "A technique that gives AI access to external data (documents, databases) at query time. Instead of relying only on training data, the model retrieves relevant information first, then generates an answer grounded in facts.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "rate-limit",
+      "term": "Rate Limit",
+      "aka": null,
+      "definition": "A cap on how many API requests you can make in a given time period. Prevents abuse and ensures fair access. If you hit one, you need to slow down or upgrade your plan.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "rlhf",
+      "term": "RLHF",
+      "aka": "Reinforcement Learning from Human Feedback",
+      "definition": "A training technique where humans rate AI outputs, and the model learns to produce responses humans prefer. It's why modern AI feels more helpful and less robotic than earlier models.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "sdk",
+      "term": "SDK",
+      "aka": "Software Development Kit",
+      "definition": "A collection of tools, libraries, and documentation that makes it easier to build with an API. The Anthropic SDK lets you use Claude in your Python or JavaScript code with a few lines.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "subagent",
+      "term": "Subagent",
+      "aka": null,
+      "definition": "A secondary AI agent spawned by a primary agent to handle a specific subtask. Like delegating work to a team member. Multiple subagents can run in parallel on different parts of a project.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "system-prompt",
+      "term": "System Prompt",
+      "aka": null,
+      "definition": "Hidden instructions given to an AI that set its behavior, personality, and rules before the user starts chatting. It's the difference between \"generic AI\" and \"your custom agent.\"",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "temperature",
+      "term": "Temperature",
+      "aka": null,
+      "definition": "A setting that controls how random or creative AI output is. Low temperature (0.0-0.3) = deterministic and focused. High temperature (0.7-1.0) = more creative and varied. Use low for code, high for brainstorming.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "token",
+      "term": "Token",
+      "aka": null,
+      "definition": "The basic unit AI uses to process text. A token is roughly 3/4 of a word. \"Hamburger\" is 3 tokens. Tokens determine cost (you pay per token) and fit within the context window.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "tool-use",
+      "term": "Tool Use",
+      "aka": null,
+      "definition": "The ability of AI to call external functions \u2014 search the web, read files, run code, access APIs. This is what separates agents from chatbots. Without tools, AI can only talk. With tools, it can act.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "transformer",
+      "term": "Transformer",
+      "aka": null,
+      "definition": "The neural network architecture behind all modern LLMs. Introduced in the 2017 paper \"Attention Is All You Need.\" Uses attention mechanisms to process text in parallel rather than word by word.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "vector-database",
+      "term": "Vector Database",
+      "aka": null,
+      "definition": "A database designed to store and search embeddings (number representations of text/images). Used in RAG systems to find relevant documents quickly. Examples: Pinecone, Weaviate, Chroma.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "weights",
+      "term": "Weights",
+      "aka": null,
+      "definition": "Synonym for parameters. The numerical values inside a neural network that determine how it processes input. Training adjusts the weights; inference uses them.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "zero-shot",
+      "term": "Zero-Shot",
+      "aka": null,
+      "definition": "Asking AI to do something without giving it any examples. \"Translate this to French\" is zero-shot. Contrast with few-shot (providing examples first). Modern LLMs are surprisingly good at zero-shot tasks.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "few-shot",
+      "term": "Few-Shot",
+      "aka": null,
+      "definition": "A prompting technique where you provide 2-5 examples of the desired input/output format before asking AI to process new input. Dramatically improves consistency and accuracy for structured tasks.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "context-engineering",
+      "term": "Context Engineering",
+      "aka": null,
+      "definition": "The practice of carefully curating what information you feed to AI \u2014 not just how you ask, but what data you include. More strategic than prompt engineering. The skill that separates casual users from power users.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "agentic-workflow",
+      "term": "Agentic Workflow",
+      "aka": null,
+      "definition": "A process where AI operates with autonomy: planning steps, using tools, evaluating results, and iterating without human intervention at each step. The opposite of chat-mode, where every exchange requires human input.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "skill",
+      "term": "Skill",
+      "aka": null,
+      "definition": "A multi-step workflow an agent knows how to execute by chaining tools together. \"Deploy a website\" is a skill (read files \u2192 build \u2192 deploy \u2192 verify). \"Read file\" is a tool. Tools are individual actions; skills are choreography. A good agent has: personality, goals, tools, and skills.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "prag",
+      "term": "pRAG",
+      "aka": "Personal RAG",
+      "definition": "A RAG system built on your own knowledge base \u2014 blog posts, talks, documents, investor memos \u2014 so an AI can answer questions grounded in your actual expertise. Instead of generic AI answers, you get responses backed by your work. The new resume.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "chunking",
+      "term": "Chunking",
+      "aka": null,
+      "definition": "Splitting documents into smaller pieces for storage in a vector database. Chunk size is a critical design choice: too big and you retrieve irrelevant context, too small and you lose meaning. Typical sizes: 200-1,000 tokens per chunk.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "grounding",
+      "term": "Grounding",
+      "aka": null,
+      "definition": "Anchoring AI responses in real data (retrieved documents, search results, database records) rather than relying on training data alone. RAG is the most common grounding technique. Grounded answers cite sources; ungrounded answers hallucinate.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "human-in-the-loop",
+      "term": "Human-in-the-Loop",
+      "aka": null,
+      "definition": "A pattern where sensitive AI actions (send email, delete files, deploy code) require human approval before execution. The agent proposes, the human approves. Critical for building trust and preventing costly mistakes.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "mcp-server",
+      "term": "MCP Server",
+      "aka": null,
+      "definition": "A lightweight program that exposes tools to AI via the Model Context Protocol. One MCP server for Gmail means every AI app can send/read email. Build the server once; any MCP-compatible agent can use it.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "orchestrator",
+      "term": "Orchestrator",
+      "aka": null,
+      "definition": "An AI agent that coordinates other agents, breaking complex tasks into subtasks and assigning them. Like a project manager for AI teams. In multi-agent systems, the orchestrator decides who does what.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "tokenization",
+      "term": "Tokenization",
+      "aka": null,
+      "definition": "The process of splitting text into tokens \u2014 the fundamental units an LLM processes. Different models use different tokenizers, so the same text can produce different token counts. \"Strawberry\" might be 1 token or 3, depending on the tokenizer.",
+      "category": "models",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "quantization",
+      "term": "Quantization",
+      "aka": null,
+      "definition": "Quantization is like shrinking a high\u2011resolution photo into a smaller file by reducing the number of colors, but for neural nets. It drops the precision of the numbers the model uses (e.g., from 32\u2011bit floats to 8\u2011bit integers) so the model runs faster and needs less memory. The trade\u2011off is a tiny dip in accuracy, but for many apps the speed gain is worth it.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "model-drift",
+      "term": "Model Drift",
+      "aka": null,
+      "definition": "Model drift happens when a model's performance slides downhill because the real\u2011world data it encounters gradually differs from the data it was trained on. It's like a GPS that was calibrated for downtown streets but is now being used in a new suburb\u2014the directions get less accurate over time. Detecting drift means regularly checking the model against fresh data and retraining when the error climbs beyond an acceptable threshold.",
+      "category": "concepts",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "adapter",
+      "term": "Adapter",
+      "aka": null,
+      "definition": "Think of a massive language model as a fully built Lego castle. An adapter is a small plug\u2011in block you snap onto the existing walls to give the castle a new ability without rebuilding it from scratch. You only train the adapter\u2019s tiny set of weights, leaving the original model untouched, so you can quickly specialize for a new task or domain with far less compute.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "instruction-tuning",
+      "term": "Instruction Tuning",
+      "aka": null,
+      "definition": "Instruction tuning is like giving a student a cheat sheet of how to answer different types of questions before the exam. You train a language model on many examples where each prompt includes a clear instruction (e.g., 'Summarize the paragraph in one sentence') and the desired response. This helps the model follow new, unseen instructions more reliably, without needing full fine\u2011tuning on every task.",
+      "category": "techniques",
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "model-registry",
+      "term": "Model Registry",
+      "aka": null,
+      "definition": "A model registry is like a library catalog for your AI models. It records each model version, its training data, performance metrics, and who approved it, so you can quickly find the right model for a job. When you pull a model from the registry, you know exactly which \u2018book\u2019 you\u2019re reading, avoiding accidental mix\u2011ups or using stale models.",
+      "category": "infrastructure",
+      "added_date": "2026-03-08"
+    }
+  ]
+}

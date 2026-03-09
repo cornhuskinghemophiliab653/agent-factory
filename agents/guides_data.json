@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "updated": "2026-03-08"
+  },
+  "guides": [
+    {
+      "id": "engineering",
+      "dept_slug": "engineering",
+      "title": "How to Use AI in Engineering & Dev",
+      "intro": "AI\u2011driven code assistants now write boiler\u2011plate, surface regressions, and auto\u2011scale infra definitions, shaving hours from daily dev cycles. Teams that embed LLMs in CI/CD, testing, and architecture reviews see faster delivery and fewer manual bugs.",
+      "steps": [
+        {
+          "title": "Generate Boilerplate via Prompt",
+          "body": "Open a new branch and run a local LLM (e.g., Claude or Code Llama) with a concise prompt describing the component, API contract, or microservice. Accept the output, run the IDE\u2019s formatter, and push \u2013 you have a working scaffold in minutes."
+        },
+        {
+          "title": "AI\u2011Assist Pull\u2011Request Review",
+          "body": "Configure a GitHub Action that sends each PR diff to an LLM for style, security, and performance hints, then posts the summary as a comment. Use the comment to triage obvious issues before a human review."
+        },
+        {
+          "title": "Auto\u2011Generate CI Pipelines",
+          "body": "Feed your repo\u2019s tech stack (e.g., Node + Docker) to an LLM prompt that returns a ready\u2011to\u2011use GitHub Actions YAML. Paste the YAML, commit, and watch the pipeline spin up without hand\u2011crafting scripts."
+        },
+        {
+          "title": "Create Test Suites Instantly",
+          "body": "Run an LLM against your recent feature branch asking for unit and end\u2011to\u2011end tests in your preferred framework (Jest, Playwright, etc.). Paste the generated tests, run them locally, and iterate on flaky cases."
+        },
+        {
+          "title": "Add AI\u2011Powered Monitoring",
+          "body": "Deploy a lightweight log\u2011analysis agent that forwards metrics to an LLM endpoint, which flags anomalous patterns (latency spikes, error bursts) in Slack. Set the alert threshold once and let the model refine it over time."
+        }
+      ],
+      "pro_tips": [
+        "Version\u2011control your prompts; a small wording tweak can halve review comment noise.",
+        "Guard LLM outputs with static analysis \u2013 run ESLint or bandit before merging any AI\u2011generated code.",
+        "Fine\u2011tune a small internal model on your codebase for higher accuracy and lower data\u2011leak risk."
+      ],
+      "recommended_agents": [
+        "backend-architect",
+        "devops-engineer",
+        "qa-tester"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "marketing",
+      "dept_slug": "marketing",
+      "title": "How to Use AI in Marketing",
+      "intro": "AI is now crunching your performance data, generating copy, and even designing ad visuals fast enough to outpace weekly sprint cycles. The result is a tighter feedback loop between audience signals and creative output, letting marketers iterate in days instead of months.",
+      "steps": [
+        {
+          "title": "Audit Content Gaps",
+          "body": "Run an AI SEO audit (e.g., Surfer or Clearscope) on your top 20 pages to surface missed keyword clusters and unanswered user questions. Export the suggestions to a shared spreadsheet and prioritize the top three gaps for immediate article creation."
+        },
+        {
+          "title": "Generate Copy Variants",
+          "body": "Prompt GPT\u20114 or Jasper with the identified gaps to produce five headline and three body\u2011copy variations each. Import the results into your A/B testing tool (Google Optimize, VWO) to start live testing within 48 hours."
+        },
+        {
+          "title": "AI\u2011Boost Segmentation",
+          "body": "Export your CRM contact list to a CSV and run a clustering model in ChatGPT\u2019s Code Interpreter or a no\u2011code AI platform like Obviously.ai. Use the generated segments to build a targeted email drip or paid\u2011media audience this week."
+        },
+        {
+          "title": "Create AI Ad Assets",
+          "body": "Use DALL\u00b7E 3 or Midjourney to generate three visual concepts per product, then pair each with the copy variants from step\u202f2. Upload the five best combos to Meta Ads Manager and set up automated rules for cost\u2011per\u2011click optimization."
+        },
+        {
+          "title": "Deploy Predictive Dashboards",
+          "body": "Connect Google Analytics 4 and your ad platforms to Looker Studio, then add a BigQuery ML model that forecasts next\u2011week ROAS based on the new assets. Schedule a daily email with the dashboard link to keep the team aligned on performance."
+        }
+      ],
+      "pro_tips": [
+        "Fine\u2011tune your AI prompts with brand\u2011specific terminology; a single keyword tweak can improve tone consistency by 30\u202f%.",
+        "Always run AI\u2011generated copy through a quick human sanity check for factual accuracy before publishing.",
+        "Set a hard limit on AI\u2011generated ideas (e.g., max 10 per week) to avoid analysis paralysis and keep the creative pipeline flowing."
+      ],
+      "recommended_agents": [
+        "content-writer",
+        "growth-hacker",
+        "seo-specialist"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "sales",
+      "dept_slug": "sales",
+      "title": "How to Use AI in Sales",
+      "intro": "AI-driven prospect scoring and real-time conversation insights are cutting the sales cycle by up to 30% at leading B2B firms. By embedding large-language models into your CRM and outreach tools, reps get personalized scripts and data-driven pipeline forecasts without manual crunching.",
+      "steps": [
+        {
+          "title": "Integrate AI prospect scoring",
+          "body": "Connect an LLM-powered enrichment service (e.g., Clearbit + OpenAI) to your CRM to assign a confidence score to every new lead based on firmographics and recent intent signals. Export the score into your lead list so SDRs can prioritize the top\u201110% each morning."
+        },
+        {
+          "title": "Automate first\u2011touch email drafts",
+          "body": "Use a prompt template that feeds the lead\u2019s score, industry, and pain points into a generative model (ChatGPT or Claude) to produce a 2\u2011sentence cold email. Paste the output into your outreach platform (Outreach, SalesLoft) and send; edit only if the tone feels off."
+        },
+        {
+          "title": "Deploy AI call\u2011summary bots",
+          "body": "Run a real-time transcription service (e.g., Otter.ai) with a post-call LLM that extracts key objections, decision\u2011maker names, and next\u2011step dates, then logs them directly into the CRM record. This reduces manual note\u2011taking and ensures uniform data quality."
+        },
+        {
+          "title": "Refresh pipeline forecasts",
+          "body": "Feed the latest opportunity data into a forecasting model built in Google Cloud AutoML or a pre\u2011built Salesforce Einstein add\u2011on, then compare the AI\u2019s 30\u2011day close probability with your manual estimates. Adjust quotas or focus areas based on the divergence."
+        },
+        {
+          "title": "Create AI win\u2011back sequences",
+          "body": "Identify churned accounts older than 90 days, run an LLM to craft a re\u2011engagement cadence that references prior purchase history and new product features, and load the sequence into your marketing automation tool. Track response rates to iterate the prompt."
+        }
+      ],
+      "pro_tips": [
+        "Never let the model choose the subject line\u2014run A/B tests on a static list of proven triggers and let AI only vary the body copy.",
+        "Lock the temperature parameter low (e.g., 0.2) for data-entry tasks; higher creativity is great for emails but kills consistency in CRM fields.",
+        "Schedule a weekly 15\u2011minute \u2018AI audit\u2019 where the team reviews a random sample of AI-generated notes to catch hallucinations before they corrupt reporting."
+      ],
+      "recommended_agents": [
+        "sdr-agent",
+        "account-executive",
+        "crm-analyst"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "hr",
+      "dept_slug": "hr",
+      "title": "How to Use AI in HR & People",
+      "intro": "Generative AI is now able to sift millions of CVs, craft interview scripts, and surface hidden performance patterns in real time. By embedding these models directly into your applicant tracking and talent management tools, HR teams are shaving days off hiring cycles and making data\u2011driven people decisions.",
+      "steps": [
+        {
+          "title": "Screen Resumes with AI",
+          "body": "Export the latest batch of applicants from Greenhouse and run them through an LLM\u2011based parser (e.g., OpenAI\u2019s ChatGPT API with a custom resume\u2011extraction prompt). Tag each CV with skill scores and flag those that meet your minimum threshold for a human review."
+        },
+        {
+          "title": "Create Structured Interview Guides",
+          "body": "Feed the job description into the Recruiter agent to generate a set of competency\u2011based questions that avoid gendered language. Export the list to your interview portal and assign each question to the appropriate interviewer before the interview slot."
+        },
+        {
+          "title": "Personalize Onboarding Plans",
+          "body": "Upload new\u2011hire profiles into the Onboarding Specialist agent; it will stitch together a 30\u201160\u201190 plan that aligns role\u2011specific training, Slack channel introductions, and compliance tasks. Push the plan to your LMS (e.g., Workday Learning) so the employee sees a day\u2011by\u2011day agenda immediately."
+        },
+        {
+          "title": "Launch AI\u2011Powered Performance Dashboards",
+          "body": "Connect the Performance Coach agent to your OKR tool (e.g., Asana) and HRIS to auto\u2011populate a dashboard with real\u2011time KPI variance, sentiment from quarterly check\u2011ins, and predictive risk scores for under\u2011performers. Share the link with managers for a weekly 10\u2011minute review."
+        },
+        {
+          "title": "Deploy an HR FAQ Chatbot",
+          "body": "Train a lightweight chatbot on your employee handbook, benefits guide, and recent policy updates using the HR Analyst agent as a knowledge base. Embed the bot in Teams or your intranet, then monitor usage logs to refine answers over the next two weeks."
+        }
+      ],
+      "pro_tips": [
+        "Run a pilot on a single department first and compare AI scores against actual hire success to calibrate thresholds.",
+        "Mask personally identifiable information before sending resumes to any LLM to stay compliant with GDPR and CCPA.",
+        "Keep a human\u2011in\u2011the\u2011loop for any performance\u2011risk alerts; AI flags patterns, but contextual nuance still needs a manager\u2019s judgment."
+      ],
+      "recommended_agents": [
+        "recruiter",
+        "onboarding-specialist",
+        "performance-coach"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "finance",
+      "dept_slug": "finance",
+      "title": "How to Use AI in Finance",
+      "intro": "AI is now turning weeks\u2011long month\u2011end close cycles into near\u2011real\u2011time processes by auto\u2011pulling data from ERP, bank feeds, and SaaS sources. It also generates variance explanations and scenario forecasts that senior leaders can act on within hours.",
+      "steps": [
+        {
+          "title": "Automate Data Ingestion",
+          "body": "Connect your ERP, payroll, and banking APIs to an AI\u2011powered ETL tool such as Azure Data Factory with built\u2011in GPT\u20114 transforms. Let the model map source fields to your chart\u2011of\u2011accounts and flag mismatches before they land in the data lake."
+        },
+        {
+          "title": "Deploy Generative Forecasting",
+          "body": "Feed the cleaned data into a time\u2011series model (e.g., Prophet or Azure AutoML) and use a LLM to translate the output into a quarterly revenue forecast spreadsheet. Schedule the run weekly so the forecast updates with the latest actuals without manual tweaking."
+        },
+        {
+          "title": "Add AI\u2011driven Variance Alerts",
+          "body": "Set up a monitoring script that compares actuals vs. forecast, then prompts GPT\u20114 to write a concise variance note with root\u2011cause hypotheses. Push the note to Slack or Teams for the finance lead to review before the next reporting cycle."
+        },
+        {
+          "title": "Generate Narrative Reports",
+          "body": "Integrate the LLM with your BI tool (e.g., Tableau or Power BI) to auto\u2011populate the executive summary section of the month\u2011end deck. The model pulls key metrics, variance alerts, and scenario outcomes, producing a ready\u2011to\u2011present narrative in seconds."
+        },
+        {
+          "title": "Integrate AI into Approval Workflow",
+          "body": "Embed the AI\u2011generated variance notes into your ERP\u2019s approval screen using a simple webhook. Approvers see the rationale and suggested corrective actions, reducing back\u2011and\u2011forth email loops and speeding sign\u2011off."
+        }
+      ],
+      "pro_tips": [
+        "Start with a single KPI (e.g., cash\u2011conversion cycle) to prove ROI before scaling AI across the board.",
+        "Fine\u2011tune the LLM on your company's historical commentary so the language mirrors your internal style and avoids generic filler.",
+        "Version\u2011control your AI prompts and data pipelines in Git; a minor prompt change can rewrite entire forecasts."
+      ],
+      "recommended_agents": [
+        "financial-analyst",
+        "fpa-analyst",
+        "financial-modeler"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "legal",
+      "dept_slug": "legal",
+      "title": "How to Use AI in Legal & Compliance",
+      "intro": "AI is now fast\u2011tracking contract review, automating privacy\u2011rights workflows, and surfacing compliance gaps before they become issues. In a single week you can embed generative and classification models into the core legal processes that currently rely on manual checking.",
+      "steps": [
+        {
+          "title": "Run AI Contract Scan",
+          "body": "Upload your latest batch of NDAs, MSAs, and vendor agreements into the contract\u2011manager agent and let it flag missing clauses, unusual jurisdiction terms, and risk\u2011weighted language. Export the highlighted report to your contract repository and assign remediation tasks to the responsible owners."
+        },
+        {
+          "title": "Create Policy\u2011Change Alerts",
+          "body": "Feed your internal policy documents into the compliance\u2011officer agent and set up keyword monitors for regulatory terms (e.g., \"SARS\u2011CoV-2\", \"carbon\u2011credit\"). The agent will push Slack notifications whenever a newly published regulation matches a policy gap."
+        },
+        {
+          "title": "Automate Data\u2011Subject Requests",
+          "body": "Integrate the privacy\u2011officer agent with your ticketing system (Jira, ServiceNow) so incoming GDPR or CCPA requests are auto\u2011categorized, assigned a SLA, and pre\u2011filled with template response drafts. Review the AI\u2011generated draft, approve, and the system will dispatch the final reply."
+        },
+        {
+          "title": "Draft Regulatory Filings",
+          "body": "Use the regulatory\u2011analyst agent to pull the latest filing templates from your industry regulator\u2019s portal, then feed in the quarterly data set. The agent produces a first\u2011draft filing that you only need to verify numbers and sign off, cutting drafting time by up to 70%."
+        },
+        {
+          "title": "Score Emerging Risks",
+          "body": "Run the risk\u2011manager agent over internal audit logs and external news feeds to produce a risk\u2011heat map for the next 30 days. Prioritize the top three scores, assign owners, and schedule a quick risk\u2011review meeting before the next board call."
+        }
+      ],
+      "pro_tips": [
+        "Always keep a human reviewer in the loop for any AI\u2011generated clause changes\u2014legal nuance still beats pattern matching.",
+        "Version\u2011control AI outputs in the same system you store originals; it makes rollback and audit trails effortless.",
+        "Fine\u2011tune the agents on your own contract and policy corpus; a small custom dataset improves relevance dramatically."
+      ],
+      "recommended_agents": [
+        "contract-manager",
+        "compliance-officer",
+        "privacy-officer"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "operations",
+      "dept_slug": "operations",
+      "title": "How to Use AI in Operations",
+      "intro": "AI is turning operational bottlenecks into data\u2011driven opportunities by automatically surfacing waste, predicting demand spikes, and monitoring vendor performance in real time. In practice, AI tools can be layered onto existing SOPs and dashboards to shave hours off routine work each week.",
+      "steps": [
+        {
+          "title": "Map Processes with AI Mining",
+          "body": "Connect your ERP or ticketing system to an AI\u2011powered process\u2011mining tool (e.g., Celonis, UiPath Process Mining) and generate a visual map of actual transaction flows. Export the model to a shared drive so the Ops team can pinpoint deviations from the documented SOPs."
+        },
+        {
+          "title": "Automate Repetitive Tasks",
+          "body": "Identify high\u2011frequency manual steps (invoice entry, status updates) and build RPA bots using platforms like Automation Anywhere or Make.com. Deploy the bots in a sandbox, run a pilot on one business unit, and measure time saved before scaling."
+        },
+        {
+          "title": "Add AI Demand Forecasts",
+          "body": "Feed historical sales and inventory data into a cloud AI service (e.g., Amazon Forecast or Azure AI) to generate short\u2011term demand predictions. Import the forecasts into your S&OP spreadsheet to adjust reorder points instantly."
+        },
+        {
+          "title": "Monitor Vendor SLAs with AI",
+          "body": "Configure an AI\u2011driven monitoring script (Python + OpenAI embeddings) to scan vendor portals and email receipts for SLA breaches. Set up Slack or Teams alerts so the Vendor Manager can intervene before penalties accrue."
+        },
+        {
+          "title": "Embed AI Insights in Ops Dashboards",
+          "body": "Create a Power BI or Looker dashboard that pulls anomaly scores, bot performance metrics, and forecast accuracy into a single view. Schedule a 15\u2011minute daily stand\u2011up to review the AI alerts and assign corrective actions."
+        }
+      ],
+      "pro_tips": [
+        "Start with a single, high\u2011volume process; the ROI of AI shines when you can quantify minutes saved per transaction.",
+        "Give the RPA bot a human fallback channel (e.g., a Teams button) to handle edge\u2011cases without breaking the workflow.",
+        "Re\u2011train your demand models quarterly with the latest market events; stale models generate more noise than insight."
+      ],
+      "recommended_agents": [
+        "bizops-analyst",
+        "process-automator",
+        "supply-chain"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "support",
+      "dept_slug": "support",
+      "title": "How to Use AI in Customer Support",
+      "intro": "AI is now routing tickets in seconds, tagging sentiment, and suggesting answers while agents stay on the line. These capabilities cut first\u2011response time and lift CSAT without adding headcount.",
+      "steps": [
+        {
+          "title": "Deploy AI ticket triage",
+          "body": "Connect an LLM\u2011backed bot (e.g., OpenAI with Zendesk webhook) to your inbox. Configure it to read incoming tickets, assign priority, and tag the appropriate product line within the first minute."
+        },
+        {
+          "title": "Add real\u2011time sentiment scores",
+          "body": "Enable a sentiment\u2011analysis model on the ticket body and surface a green/yellow/red flag on the agent\u2019s dashboard. Use the flag to route negative tickets to senior reps instantly."
+        },
+        {
+          "title": "Generate draft replies automatically",
+          "body": "Set up a shortcut that sends the ticket text to an LLM prompt and returns a concise draft with blanks for personal details. Agents edit the draft, approve, and send\u2014cutting typing time by up to 40%."
+        },
+        {
+          "title": "Feed AI insights into the knowledge base",
+          "body": "Create a nightly job that extracts unresolved questions and the LLM\u2019s most\u2011used answers, then pushes them into Confluence or Zendesk Guide as draft articles. Review and publish within 24\u202fhours to improve self\u2011service deflection."
+        },
+        {
+          "title": "Run a weekly AI performance review",
+          "body": "Pull metrics (first\u2011response time, CSAT lift, escalation rate) from your ticketing system and compare them against the AI\u2011enabled workflow. Adjust prompts, retrain on new tickets, and document changes in a runbook."
+        }
+      ],
+      "pro_tips": [
+        "Keep LLM prompts under 150 tokens; longer prompts increase latency and hallucination risk.",
+        "Create a \u2018human\u2011in\u2011the\u2011loop\u2019 flag for any AI\u2011generated reply containing code or policy language.",
+        "Refresh the fine\u2011tuning data set every month with the latest top\u201110 ticket clusters to keep suggestions relevant."
+      ],
+      "recommended_agents": [
+        "support-agent",
+        "knowledge-base-writer",
+        "support-ops"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "product",
+      "dept_slug": "product",
+      "title": "How to Use AI in Product",
+      "intro": "AI is turning product teams into rapid\u2011iteration machines by turning raw data and sketches into actionable insights in minutes. Large language models now draft roadmaps, surface hidden usage patterns, and keep release communication crisp, letting you ship faster.",
+      "steps": [
+        {
+          "title": "Automate backlog prioritization",
+          "body": "Export your Jira or ClickUp backlog to CSV, feed it into an LLM with a prompt that scores each item on impact, effort, and strategic fit, and have the model output a ranked list. Import the ranked list back into the tool to instantly reorder work for the next sprint."
+        },
+        {
+          "title": "Generate persona drafts",
+          "body": "Pull the latest survey and Mixpanel cohort data, then prompt an LLM to synthesize key demographics, goals, and pain points into 1\u2011page personas. Use the output as a starting point and validate with a quick 3\u2011person interview."
+        },
+        {
+          "title": "Run AI\u2011augmented funnel analysis",
+          "body": "Connect Amplitude or Looker data to a LLM via an API, ask it to identify drop\u2011off stages and suggest hypotheses for the top three leaks. Export the suggestions to your product\u2011analytics board for immediate experiment planning."
+        },
+        {
+          "title": "Draft AI release notes",
+          "body": "Feed the pull\u2011request diff and changelog entries into a fine\u2011tuned LLM that follows your style guide, then generate a release\u2011note draft in markdown. Paste the result into your release manager\u2019s pipeline and do a quick copy\u2011edit before publishing."
+        },
+        {
+          "title": "Deploy AI test monitoring",
+          "body": "Set up a webhook that streams A/B test results (e.g., from Optimizely) to a LLM which flags statistically significant changes and drafts a short insights blurb. Push that blurb into your Slack #product\u2011insights channel for real\u2011time stakeholder updates."
+        }
+      ],
+      "pro_tips": [
+        "Always run a sanity check on AI\u2011generated rankings with a senior PM before committing to sprint planning.",
+        "Combine two prompt variants (e.g., impact\u2011first and effort\u2011first) and merge the results to reduce single\u2011model bias.",
+        "Version\u2011control your prompts in the same repo as your product docs so you can revert or iterate quickly."
+      ],
+      "recommended_agents": [
+        "product-manager",
+        "ux-researcher",
+        "product-analyst"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "design",
+      "dept_slug": "design",
+      "title": "How to Use AI in Design & Creative",
+      "intro": "AI\u2011driven generators now turn sketchy ideas into ready\u2011to\u2011use wireframes, color systems, and copy within minutes. By plugging these outputs straight into Figma or Storybook you can shave days off a sprint without sacrificing quality.",
+      "steps": [
+        {
+          "title": "Generate Wireframes with Prompts",
+          "body": "Use a Figma AI plugin (e.g., Figmatic) or a text\u2011to\u2011image model to describe screen layout and export the result as SVG. Drop the SVG into your file and replace empty containers with real components."
+        },
+        {
+          "title": "Extract Color Palettes Automatically",
+          "body": "Feed brand assets into an image\u2011analysis model (like Adobe Firefly) to pull primary, secondary, and accent colors. Save the output as design tokens in your style dictionary for immediate reuse."
+        },
+        {
+          "title": "Create Component Variants via Codegen",
+          "body": "Prompt GPT\u20114 with component specs (props, states, accessibility notes) and let it emit React/Vue code plus Figma variant descriptions. Copy the code into Storybook and sync the variant data back to your design file."
+        },
+        {
+          "title": "Generate Microcopy in Context",
+          "body": "Run the copywriter agent on each UI element, supplying tone\u2011of\u2011voice and user\u2011flow details. Paste the resulting microcopy into your prototype to test clarity before hand\u2011off."
+        },
+        {
+          "title": "Run AI Accessibility Audits",
+          "body": "Upload your Figma frames to an AI audit tool (e.g., axe AI) to catch contrast, focus order, and ARIA issues. Fix the flagged items directly in the file, then re\u2011run to confirm compliance."
+        }
+      ],
+      "pro_tips": [
+        "Version\u2011control your prompts in a shared doc so you can reproduce a specific result later.",
+        "Treat AI\u2011generated assets as rough drafts; always apply your design system's token constraints before final approval.",
+        "Combine AI color extraction with manual palette refinement to avoid overly saturated or brand\u2011inconsistent shades."
+      ],
+      "recommended_agents": [
+        "ui-designer",
+        "design-systems",
+        "copywriter"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "data",
+      "dept_slug": "data",
+      "title": "How to Use AI in Data & Analytics",
+      "intro": "AI is now stitching together raw data, feature engineering, and visual insights in minutes rather than weeks. By automating metadata extraction, code generation, and model monitoring, teams can ship analytics products faster while keeping governance tight.",
+      "steps": [
+        {
+          "title": "Catalog Sources with LLMs",
+          "body": "Run an AI\u2011powered data catalog scan (e.g., Azure Purview with built\u2011in LLM tagging) across your lake or warehouse. Export the generated JSON metadata and feed it into your dbt source definitions."
+        },
+        {
+          "title": "Generate SQL Boilerplate",
+          "body": "Prompt a local LLM with your schema and a business question to receive ready\u2011to\u2011run SELECT statements. Paste the result into your notebook, run a quick sanity check, and commit the query to version control."
+        },
+        {
+          "title": "Create Predictive Features",
+          "body": "Feed the curated tables into an AutoML platform like H2O AutoML or Vertex AI to auto\u2011create feature pipelines. Schedule the resulting feature\u2011store update as an Airflow DAG that runs nightly."
+        },
+        {
+          "title": "Build AI\u2011Enhanced Dashboards",
+          "body": "Connect Power\u202fBI or Looker to the feature store and model predictions, then add AI visuals such as key\u2011driver analysis. Publish the report and configure a 24\u2011hour refresh to keep insights current."
+        },
+        {
+          "title": "Set Up Model Monitoring",
+          "body": "Deploy Evidently AI within Prometheus to track data drift, performance decay, and bias. Create Slack alerts for threshold breaches and schedule a monthly review cycle."
+        }
+      ],
+      "pro_tips": [
+        "Include explicit schema details in every LLM prompt; it cuts hallucinations dramatically.",
+        "Treat AI\u2011generated code like any other artifact: store it in Git, run linting, and run unit tests before production.",
+        "Use a lightweight embedding store (e.g., Qdrant) for internal documentation RAG, so analysts can ask unrestricted natural\u2011language queries without leaving the data environment."
+      ],
+      "recommended_agents": [
+        "data-engineer",
+        "data-scientist",
+        "bi-engineer"
+      ],
+      "added_date": "2026-03-08"
+    },
+    {
+      "id": "executive",
+      "dept_slug": "executive",
+      "title": "How to Use AI in Executive & Strategy",
+      "intro": "AI is now a real-time analyst for C-suite teams, turning raw market data, internal metrics, and competitor moves into instantly digestible insights. Executives can use generative models to prototype strategic options and surface risks within hours instead of weeks.",
+      "steps": [
+        {
+          "title": "Harvest Competitive Data",
+          "body": "Connect an AI-powered search tool like AlphaSense or MarketMuse to your Slack channel and run a daily query for key competitor announcements. Export the top five results to a shared Google Sheet, tagging each with source and sentiment for quick board briefings."
+        },
+        {
+          "title": "AI-Driven Scenario Modeling",
+          "body": "Use a spreadsheet add-on (e.g., GPT for Sheets) to feed macro variables (interest rates, supply-chain latency) into a GPT-generated scenario table. The model will auto-calculate projected revenue ranges, letting you compare three-plus futures before the next strategy meeting."
+        },
+        {
+          "title": "Summarize KPI Dashboards",
+          "body": "Upload the monthly KPI PDF to a summarization engine such as Claude or ChatGPT\u2019s file-analysis mode and ask for a one-page executive summary with variance explanations. Paste the output into your board deck to cut prep time by 70%."
+        },
+        {
+          "title": "Create an AI Decision Log",
+          "body": "Set up a Notion database with a GPT-backed \u201crationale\u201d field that auto-writes a two-sentence justification whenever you log a decision. Include a confidence score generated from sentiment analysis of the discussion transcript."
+        },
+        {
+          "title": "Run a Rapid Strategy Sprint",
+          "body": "Prompt the strategy-consultant agent with your top business objective and ask for three differentiated strategic options, each with pros, cons, and implementation milestones. Share the options in a Teams poll, collect votes, and schedule a 30-minute alignment call."
+        }
+      ],
+      "pro_tips": [
+        "Never rely on a single AI output; always triangulate with a domain expert or recent earnings call transcript.",
+        "Store prompt versions in a Git repo so you can revert to a known-good prompt when the model drifts.",
+        "Assign a \"AI champion\" on the executive team to audit data bias weekly; this prevents strategic blind spots from creeping in."
+      ],
+      "recommended_agents": [
+        "strategy-consultant",
+        "ceo-coach",
+        "board-advisor"
+      ],
+      "added_date": "2026-03-08"
+    }
+  ]
+}
